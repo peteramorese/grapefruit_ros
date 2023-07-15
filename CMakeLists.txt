@@ -3,6 +3,7 @@ project(grapefruit_ros)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+
 add_compile_options(-lstdc++fs)
 find_package(catkin REQUIRED COMPONENTS
 	roscpp 
@@ -19,4 +20,6 @@ catkin_package(
 )
 
 add_subdirectory(src)
+
+set(BUILD_GF_EXECUTABLES OFF) # Toggle executables OFF to not pollute
 add_subdirectory(grapefruit)
