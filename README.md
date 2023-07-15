@@ -1,2 +1,2 @@
-# grapefruit_ros
+# Grapefruit ROS
 ROS package for Grapefruit
