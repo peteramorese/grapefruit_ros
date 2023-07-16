@@ -9,7 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
 	roscpp 
 	genmsg
 	message_generation
-	taskit
+	#taskit
 )
 
 find_package(Boost REQUIRED system filesystem date_time thread)
