@@ -11,6 +11,7 @@ target_link_libraries(prl_ros_node
 target_include_directories(prl_ros_node PUBLIC
     ${catkin_INCLUDE_DIRS}
     ${TASKIT_LIBRARY_DIR}
+    ${GF_LIBRARY_DIR}
 )
 
 install(TARGETS prl_ros_node DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
