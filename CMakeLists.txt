@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 add_compile_options(-lstdc++fs)
+
+find_package (Eigen3 3.3 REQUIRED NO_MODULE)
 find_package(catkin REQUIRED COMPONENTS
 	roscpp 
 	genmsg
@@ -18,6 +20,8 @@ catkin_package(
 	CATKIN_DEPENDS 
 		message_runtime
 )
+
+set(GF_LIBRARY_DIR ${CMAKE_CURRENT_SOURCE_DIR}/grapefruit)
 
 add_subdirectory(src)
 
