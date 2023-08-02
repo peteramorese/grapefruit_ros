@@ -15,3 +15,4 @@ target_include_directories(prl_ros_node PUBLIC
 )
 
 install(TARGETS prl_ros_node DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+add_dependencies(prl_ros_node ${taskit_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})

@@ -13,6 +13,24 @@ static const std::string node_name = "prl_ros_node";
 
 using namespace PRL;
 
+// Currently assumes that the end effector location is 'stow'
+std::vector<std::string> getObjectLocations(const std::vector<std::string>& object_ids) {
+	ros::ServiceClient client = node_handle.serviceClient<taskit::GetObjectLocations>("/manipulator_node/action_primitive/get_object_locations");
+	taskit::GetObjectLocations srv;
+	srv.request.object_ids = object_ids;
+	if (client.call(srv)) {
+		if (srv.response.found_all) {
+			return srv.response.object_locations;
+		} else {
+			ROS_ERROR("Not all objects were found from 'get_object_locations' service");
+			return {};
+		}
+	} else {
+		ROS_ERROR("Failed to call 'get_object_locations' service");
+		return {};
+	}
+}
+
 int main(int argc, char** argv) {
 	
     ros::init(argc, argv, node_name);
@@ -23,17 +41,19 @@ int main(int argc, char** argv) {
 	
 	/////////////////   Transition System   /////////////////
 	
-	GF::DiscreteModel::GridWorldAgentProperties ts_props;
-	if (!config_filepath.has()) {
-		ts_props.n_x = 10;
-		ts_props.n_y = 10;
-		ts_props.init_coordinate_x = 0;
-		ts_props.init_coordinate_y = 0;
-	} else {
-		ts_props = GF::DiscreteModel::GridWorldAgent::deserializeConfig(config_filepath.get());
+	GF::DiscreteModel::ManipulatorModelProperties ts_props;
+	node_handle.getParam("/environment/location_names", ts_props.locations);
+	node_handle.getParam("/objects/object_types", ts_props.objects);
+
+	// TODO: remove assumption that init ee location is stow	
+	ts_props.init_ee_location = GF::DiscreteModel::ManipulatorModelProperties::s_stow;
+	std::vector<std::string> obj_locations = getObjectLocations(ts_props.objects);
+	for (uint32_t i = 0; i < ts_props.objects.size(); ++i) {
+		// Number of objects must match the number of locations returned from getObjectLocations
+		ts_props.init_obj_locations[ts_props.objects[i]] = obj_locations[i];
 	}
 
-	std::shared_ptr<GF::DiscreteModel::TransitionSystem> ts = GF::DiscreteModel::GridWorldAgent::generate(ts_props);
+	std::shared_ptr<GF::DiscreteModel::TransitionSystem> ts = GF::DiscreteModel::Manipulator::generate(ts_props);
 
 	ts->print();
 
