@@ -6,12 +6,18 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_compile_options(-lstdc++fs)
 
-find_package (Eigen3 3.3 REQUIRED NO_MODULE)
+
+find_package (Eigen3 3.3.7 REQUIRED NO_MODULE)
+
+#set(EIGEN_INCLUDE_DIR "/usr/local/include/eigen3")
+message("EIGEN INCUDE DIR HELLO: ${EIGEN3_INCLUDE_DIR}")
+include_directories("/usr/local/include/eigen3")
+
 find_package(catkin REQUIRED COMPONENTS
 	roscpp 
 	genmsg
 	message_generation
-	#taskit
+	taskit
 )
 
 find_package(Boost REQUIRED system filesystem date_time thread)
@@ -25,6 +31,7 @@ set(GF_LIBRARY_DIR ${CMAKE_CURRENT_SOURCE_DIR}/grapefruit)
 
 add_subdirectory(src)
 
-set(BUILD_GF_EXECUTABLES OFF) # Toggle executables OFF to not pollute
+set(GF_BUILD_EXECUTABLES OFF) # Toggle executables OFF to not pollute
+set(GF_ENABLE_MATRIX_CHECKS OFF) # Need to build with Eigen 3.3.7
 add_subdirectory(grapefruit)
 

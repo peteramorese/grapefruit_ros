@@ -16,13 +16,17 @@
 #include "taskit/UpdateEnvSrv.h"
 #include "taskit/GetObjectLocations.h"
 
+static_assert(EIGEN_WORLD_VERSION == 3);
+static_assert(EIGEN_MAJOR_VERSION == 3 || EIGEN_MAJOR_VERSION == 4);
+static_assert(EIGEN_MINOR_VERSION >= 8);
+
 static const std::string node_name = "prl_ros_node";
 constexpr uint64_t N = 2;
 
 using namespace PRL;
 
 // Currently assumes that the end effector location is 'stow'
-std::vector<std::string> getObjectLocations(const ros::NodeHandle& nh, const std::vector<std::string>& object_ids) {
+std::vector<std::string> getObjectLocations(ros::NodeHandle& nh, const std::vector<std::string>& object_ids) {
 	ros::ServiceClient client = nh.serviceClient<taskit::GetObjectLocations>("/manipulator_node/action_primitive/get_object_locations");
 	taskit::GetObjectLocations srv;
 	srv.request.object_ids = object_ids;
@@ -56,7 +60,7 @@ GF::Stats::Distributions::FixedMultivariateNormal<N> makePreferenceDist(const st
 	GF::Stats::Distributions::FixedMultivariateNormal<N> dist;
 	dist.mu = mean_converted;
 	dist.setSigmaFromUniqueElementVector(minimal_cov_converted);
-	ASSERT(GF::isCovariancePositiveSemiDef(dist.Sigma), "Preference Covariance: \n" << dist.Sigma <<"\nis not positive semi-definite");
+	//ASSERT(GF::isCovariancePositiveSemiDef(dist.Sigma), "Preference Covariance: \n" << dist.Sigma <<"\nis not positive semi-definite");
 	return dist;
 }
 
@@ -103,7 +107,6 @@ int main(int argc, char** argv) {
 
     ros::NodeHandle node_handle("~");
 
-	Selector selector = getSelector(selector_label.get());
 	
 	// Get the prl params from the rosparam server
 	
@@ -130,6 +133,9 @@ int main(int argc, char** argv) {
 	std::vector<float> default_mean;
 	node_handle.getParam("/prl/default_mean", default_mean);
 
+	std::string selector_label = node_handle.param<std::string>("/prl/selector", "aif");
+	Selector selector = getSelector(selector_label);
+
 	/////////////////   Transition System   /////////////////
 	
 	GF::DiscreteModel::ManipulatorModelProperties ts_props;
@@ -151,7 +157,7 @@ int main(int argc, char** argv) {
 	/////////////////   DFAs   /////////////////
 
  	std::vector<GF::FormalMethods::DFAptr> dfas(1);
-	dfas[0] = std::make_shared<GF::FormalMethods::DFAptr>();
+	dfas[0].reset(new GF::FormalMethods::DFA());
 	dfas[0]->generateFromFormula(formula);
 
 	ts->addAlphabet(dfas[0]->getAlphabet());
@@ -166,7 +172,7 @@ int main(int argc, char** argv) {
  	std::shared_ptr<SymbolicGraph> product = std::make_shared<SymbolicGraph>(ts, dfas);
 
 	// Make the preference behavior distribution
-	PreferenceDistributionType p_ev = makePreferenceDist<N>(pref_mean, pref_minimal_covariance);
+	PreferenceDistributionType p_ev = makePreferenceDist(pref_mean, pref_minimal_covariance);
 
 	// Get the default transition mean if the file contains it
 	Eigen::Matrix<float, N, 1> default_mean_converted;
@@ -183,10 +189,10 @@ int main(int argc, char** argv) {
 	PRL::Learner<N> prl(behavior_handler, data_collector, n_efe_samples, true);
 
 	// Initialize the agent's state
-	GF::DiscreteModel::State init_state = GF::DiscreteModel::GridWorldAgent::makeInitState(ts_props, ts);
+	GF::DiscreteModel::State init_state = GF::DiscreteModel::Manipulator::makeInitState(ts_props, ts);
 	prl.initialize(init_state);
 
-	auto samplerFunction = [&](GF::WideNode src_node, GF::WideNode dst_node, const GF::DiscreteModel::Action& action) {
+	auto samplerFunction = [&](GF::WideNode src_node, GF::WideNode dst_node, const GF::DiscreteModel::Action& action) -> GF::Containers::FixedArray<N, float> {
 		// TODO
 	};
 
