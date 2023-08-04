@@ -16,10 +16,6 @@
 #include "taskit/UpdateEnvSrv.h"
 #include "taskit/GetObjectLocations.h"
 
-static_assert(EIGEN_WORLD_VERSION == 3);
-static_assert(EIGEN_MAJOR_VERSION == 3 || EIGEN_MAJOR_VERSION == 4);
-static_assert(EIGEN_MINOR_VERSION >= 8);
-
 static const std::string node_name = "prl_ros_node";
 constexpr uint64_t N = 2;
 
