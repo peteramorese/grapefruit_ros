@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<launch>
+  <arg name="sim" default="true" />
+  <arg name="pose_tracker" default="simulation" />
+  <arg name="use_rviz" default="true" />
+  <arg name="robot_ip" default="franka-aria.colorado.edu" />
+  <arg name="config_directory" default="$(find grapefruit_ros)/config/manipulator_node" />
+  <arg name="prl_config_file" default="$(find grapefruit_ros)/config/prl_config.yaml" />
+
+  <group ns="prl">
+    <rosparam file="$(arg prl_config_file)" />
+  </group>
+
+  <include file="$(find taskit)/launch/manipulator_node.launch">
+    <arg name="sim" value="$(arg sim)"/>
+    <arg name="pose_tracker" value="$(arg pose_tracker)"/>
+    <arg name="use_rviz" value="$(arg use_rviz)"/>
+    <arg name="robot_ip" value="$(arg robot_ip)"/>
+    <arg name="config_directory" value="$(arg config_directory)"/>
+  </include>
+
+  <node name="prl_ros_node" pkg="grapefruit_ros" type="prl_ros_node" respawn="false" output="screen"/>
+</launch>

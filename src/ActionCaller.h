@@ -17,6 +17,14 @@
 
 namespace GFROS { 
 
+void waitForManipulatorNodeServices() {
+    // Wait until services are active (10s)
+    bool services_active = ros::service::waitForService("/manipulator_node/action_primitive/grasp", 10000);
+    if (!services_active)
+        ROS_ASSERT_MSG(false, "Cannot find manipulator node services");
+    ros::WallDuration(1.0).sleep();
+}
+
 class ActionCaller {
     public: 
         using EdgeInheritor = GF::DiscreteModel::ModelEdgeInheritor<GF::DiscreteModel::TransitionSystem, GF::FormalMethods::DFA>;
@@ -24,6 +32,7 @@ class ActionCaller {
         static constexpr uint64_t N = 2; // Only supports two objectives: 1) execution time and 2) risk
     public:
         ActionCaller(ros::NodeHandle& nh, const std::shared_ptr<SymbolicGraph>& product, bool use_linear_actions = true) : m_product(product) {
+
             grasp_client = nh.serviceClient<taskit::Grasp>("/manipulator_node/action_primitive/grasp");
             release_client = nh.serviceClient<taskit::Release>("/manipulator_node/action_primitive/release");
 

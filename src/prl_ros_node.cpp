@@ -104,8 +104,11 @@ int main(int argc, char** argv) {
 
     ros::NodeHandle node_handle("~");
 
-	
+	GFROS::waitForManipulatorNodeServices();
+
 	// Get the prl params from the rosparam server
+
+	bool show_propositions_only = node_handle.param("/prl/show_propositions_only", false);
 	
 	bool exclude_plans = node_handle.param("/prl/exclude_plans", false);
 
@@ -137,7 +140,7 @@ int main(int argc, char** argv) {
 	
 	GF::DiscreteModel::ManipulatorModelProperties ts_props;
 	node_handle.getParam("/environment/location_names", ts_props.locations);
-	node_handle.getParam("/objects/object_types", ts_props.objects);
+	node_handle.getParam("/objects/object_ids", ts_props.objects);
 
 	// TODO: remove assumption that init ee location is stow	
 	ts_props.init_ee_location = GF::DiscreteModel::ManipulatorModelProperties::s_stow;
@@ -149,7 +152,10 @@ int main(int argc, char** argv) {
 
 	std::shared_ptr<GF::DiscreteModel::TransitionSystem> ts = GF::DiscreteModel::Manipulator::generate(ts_props);
 
-	ts->print();
+	if (show_propositions_only) {
+		ts->listPropositions();
+		return 0;
+	}
 
 	/////////////////   DFAs   /////////////////
 

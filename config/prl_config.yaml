@@ -1,0 +1,29 @@
+# Make this true to show the generated atomic propositions only
+# to help with writing your LTL formula
+show_propositions_only: false
+
+# Recurrence LTL formula
+formula: GF((pink_box_1_L5 & F(blue_box_1_L3 & F(pink_box_1_L1 & F(blue_box_1_L2))))) #GF((L1 & F(L2)) | F(R1 & F(R2)))
+
+# Number of episodes
+instances: 10
+
+# More samples increases accuracy of EFE info gain
+n_efe_samples: 400
+
+confidence: 0.2
+
+# Preference
+pref_mean:
+  - 20.0
+  - 3.0
+pref_minimal_covariance:
+  - 10.0
+  - 4.0
+  - 6.0
+
+default_mean:
+  - 1.0
+  - 1.0
+
+selector: aif
