@@ -1,20 +1,21 @@
 #include<iostream>
 
+// ROS
 #include "ros/ros.h"
 
+// Grapefruit
 #include "grapefruit/Grapefruit.h"
 
+// PRL
 #include "src/pareto_reinforcement_learning/BehaviorHandler.h"
 #include "src/pareto_reinforcement_learning/Learner.h"
 #include "src/pareto_reinforcement_learning/TrueBehavior.h"
 #include "src/pareto_reinforcement_learning/Misc.h"
 
-#include "taskit/StowSrv.h"
-#include "taskit/GraspSrv.h"
-#include "taskit/ReleaseSrv.h"
-#include "taskit/TransitSrv.h"
-#include "taskit/UpdateEnvSrv.h"
 #include "taskit/GetObjectLocations.h"
+
+// GFROS
+#include "ActionCaller.h"
 
 static const std::string node_name = "prl_ros_node";
 constexpr uint64_t N = 2;
@@ -188,12 +189,11 @@ int main(int argc, char** argv) {
 	GF::DiscreteModel::State init_state = GF::DiscreteModel::Manipulator::makeInitState(ts_props, ts);
 	prl.initialize(init_state);
 
-	auto samplerFunction = [&](GF::WideNode src_node, GF::WideNode dst_node, const GF::DiscreteModel::Action& action) -> GF::Containers::FixedArray<N, float> {
-		// TODO
-	};
+	// Make the action caller
+	GFROS::ActionCaller action_caller(node_handle, product, true);
 
 	// Run the PRL
-	prl.run(p_ev, samplerFunction, max_planning_instances, selector);
+	prl.run(p_ev, action_caller, max_planning_instances, selector);
 
 	LOG("Finished!");
 	std::string total_cost_str{};
