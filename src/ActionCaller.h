@@ -32,6 +32,7 @@ class ActionCaller {
         static constexpr uint64_t N = 2; // Only supports two objectives: 1) execution time and 2) risk
     public:
         ActionCaller(ros::NodeHandle& nh, const std::shared_ptr<SymbolicGraph>& product, bool use_linear_actions = true) : m_product(product) {
+            update_env_client = nh.serviceClient<taskit::UpdateEnv>("/manipulator_node/action_primitive/update_environment");
 
             grasp_client = nh.serviceClient<taskit::Grasp>("/manipulator_node/action_primitive/grasp");
             release_client = nh.serviceClient<taskit::Release>("/manipulator_node/action_primitive/release");
@@ -53,6 +54,9 @@ class ActionCaller {
             GF::Node dst_model_node = m_product->getUnwrappedNode(dst_node).ts_node;
 
             GF::Containers::FixedArray<N, float> cost_sample;
+
+            // Before execution the action, update the environment:
+            updateEnvironment();
 
             if (action == "grasp") {
                 ROS_INFO("Calling action: GRASP");
@@ -79,11 +83,27 @@ class ActionCaller {
                     ROS_ASSERT_MSG(false, "Transport failed, killing...");
                 }
             }
-
+            ROS_INFO_STREAM("Action cost 0 (total execution time)    : " << cost_sample[0]);
+            ROS_INFO_STREAM("Action cost 1 (max velocity)            : " << cost_sample[1]);
             return cost_sample;
         }
 
     private:
+        bool updateEnvironment() {
+            taskit::UpdateEnv srv;
+            srv.request.include_static = false; // Empty object ID will pick up whatver object is in the EEF location
+            if (update_env_client.call(srv)) {
+                if (!srv.response.found_all) {
+                    ROS_ERROR("Did not find all objects when updating environment");
+                    return false;
+                }
+                return true;
+            } else {
+                ROS_ERROR("Failed to call 'update_environment' service");
+                return false;
+            }
+        }
+
         bool grasp(GF::Containers::FixedArray<N, float>& cost_sample) {
             taskit::Grasp srv;
             srv.request.obj_id = std::string(); // Empty object ID will pick up whatver object is in the EEF location
@@ -155,6 +175,7 @@ class ActionCaller {
     private:
         std::shared_ptr<SymbolicGraph> m_product;
 
+        ros::ServiceClient update_env_client;
         ros::ServiceClient grasp_client;
         ros::ServiceClient release_client;
         ros::ServiceClient transit_client;
