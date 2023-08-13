@@ -31,7 +31,10 @@ class ActionCaller {
         using SymbolicGraph = GF::DiscreteModel::SymbolicProductAutomaton<GF::DiscreteModel::TransitionSystem, GF::FormalMethods::DFA, EdgeInheritor>;
         static constexpr uint64_t N = 2; // Only supports two objectives: 1) execution time and 2) risk
     public:
-        ActionCaller(ros::NodeHandle& nh, const std::shared_ptr<SymbolicGraph>& product, bool use_linear_actions = true) : m_product(product) {
+        ActionCaller(ros::NodeHandle& nh, const std::shared_ptr<SymbolicGraph>& product, const std::string& risk_obj_id, bool use_linear_actions = true) 
+            : m_product(product) 
+            , m_risk_obj_id(risk_obj_id)
+        {
             update_env_client = nh.serviceClient<taskit::UpdateEnv>("/manipulator_node/action_primitive/update_environment");
 
             grasp_client = nh.serviceClient<taskit::Grasp>("/manipulator_node/action_primitive/grasp");
@@ -52,11 +55,14 @@ class ActionCaller {
         GF::Containers::FixedArray<N, float> operator()(const GF::WideNode& src_node, const GF::WideNode& dst_node, const GF::DiscreteModel::Action& action) {
             GF::Node src_model_node = m_product->getUnwrappedNode(src_node).ts_node;
             GF::Node dst_model_node = m_product->getUnwrappedNode(dst_node).ts_node;
+            const GF::DiscreteModel::State& src_state = m_product->getModel().getGenericNodeContainer()[src_model_node];
+            const GF::DiscreteModel::State& dst_state = m_product->getModel().getGenericNodeContainer()[dst_model_node];
 
             GF::Containers::FixedArray<N, float> cost_sample;
 
             // Before execution the action, update the environment:
             updateEnvironment();
+
 
             if (action == "grasp") {
                 ROS_INFO("Calling action: GRASP");
@@ -69,26 +75,43 @@ class ActionCaller {
                     ROS_ASSERT_MSG(false, "Release failed, killing...");
                 }
             } else if (action == "transit") {
-                const GF::DiscreteModel::State& dst_state = m_product->getModel().getGenericNodeContainer()[dst_model_node];
                 const std::string& ee_loc = dst_state["ee_loc"];
                 ROS_INFO_STREAM("Calling action: TRANSIT (effector destination location: " << ee_loc << ")");
                 if (!transit(cost_sample, ee_loc)) {
                     ROS_ASSERT_MSG(false, "Transit failed, killing...");
                 }
             } else if (action == "transport") {
-                const GF::DiscreteModel::State& dst_state = m_product->getModel().getGenericNodeContainer()[dst_model_node];
+                // Check if the risky object is being held, and risk needs to be calculated for the action
+                bool isHoldingRiskObject = src_state[m_risk_obj_id] == "ee";
+                if (isHoldingRiskObject)
+                    ROS_INFO_STREAM("Transporting risky object!");
+
                 const std::string& ee_loc = dst_state["ee_loc"];
                 ROS_INFO_STREAM("Calling action: TRANSPORT (effector destination location: " << ee_loc << ")");
-                if (!transport(cost_sample, ee_loc)) {
+                if (!transport(cost_sample, ee_loc, isHoldingRiskObject)) {
                     ROS_ASSERT_MSG(false, "Transport failed, killing...");
                 }
             }
             ROS_INFO_STREAM("Action cost 0 (total execution time)    : " << cost_sample[0]);
-            ROS_INFO_STREAM("Action cost 1 (max velocity)            : " << cost_sample[1]);
+            ROS_INFO_STREAM("Action cost 1 (total risk)              : " << cost_sample[1]);
             return cost_sample;
         }
 
+        /// @brief Calculate the risk of a trajectory, assuming the eef is holding an object. The risk is the height of the 
+        /// end effector above the ground integrated over time
+        /// @param eef_trajectory Sequence of eef poses along trajectory
+        /// @param waypoint_durations Time duration of each pose
+        /// @return Total risk
+        static double getHeightAboveGroundRisk(const std::vector<geometry_msgs::Pose>& eef_trajectory, const std::vector<double>& waypoint_durations) {
+            double risk = 0.0;
+            for (std::size_t i = 0; i < eef_trajectory.size(); ++i) {
+                risk += waypoint_durations[i] * eef_trajectory[i].position.z;
+            }
+            return risk;
+        }
+
     private:
+        
         bool updateEnvironment() {
             taskit::UpdateEnv srv;
             srv.request.include_static = false; // Empty object ID will pick up whatver object is in the EEF location
@@ -110,7 +133,7 @@ class ActionCaller {
             if (grasp_client.call(srv)) {
                 if (srv.response.mv_props.execution_success) {
                     cost_sample[0] = srv.response.mv_props.execution_time;
-                    cost_sample[1] = srv.response.mv_props.max_velocity;
+                    cost_sample[1] = 0.0f;
                     return true;
                 } else {
                     return false;
@@ -127,7 +150,7 @@ class ActionCaller {
             if (release_client.call(srv)) {
                 if (srv.response.mv_props.execution_success) {
                     cost_sample[0] = srv.response.mv_props.execution_time;
-                    cost_sample[1] = srv.response.mv_props.max_velocity;
+                    cost_sample[1] = 0.0f;
                     return true;
                 } else {
                     return false;
@@ -144,7 +167,7 @@ class ActionCaller {
             if (transit_client.call(srv)) {
                 if (srv.response.mv_props.execution_success) {
                     cost_sample[0] = srv.response.mv_props.execution_time;
-                    cost_sample[1] = srv.response.mv_props.max_velocity;
+                    cost_sample[1] = 0.0f;
                     return true;
                 } else {
                     return false;
@@ -155,13 +178,13 @@ class ActionCaller {
             }
         }
 
-        bool transport(GF::Containers::FixedArray<N, float>& cost_sample, const std::string& dst_location) {
+        bool transport(GF::Containers::FixedArray<N, float>& cost_sample, const std::string& dst_location, bool get_risk) {
             taskit::Transit srv;
             srv.request.destination_location = dst_location;
             if (transport_client.call(srv)) {
                 if (srv.response.mv_props.execution_success) {
                     cost_sample[0] = srv.response.mv_props.execution_time;
-                    cost_sample[1] = srv.response.mv_props.max_velocity;
+                    cost_sample[1] = (get_risk) ? getHeightAboveGroundRisk(srv.response.mv_props.eef_trajectory, srv.response.mv_props.waypoint_durations) : 0.0f;
                     return true;
                 } else {
                     return false;
@@ -174,6 +197,7 @@ class ActionCaller {
 
     private:
         std::shared_ptr<SymbolicGraph> m_product;
+        std::string m_risk_obj_id;
 
         ros::ServiceClient update_env_client;
         ros::ServiceClient grasp_client;

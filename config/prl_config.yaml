@@ -27,3 +27,5 @@ default_mean:
   - 1.0
 
 selector: aif
+
+risk_object_id: pitcher

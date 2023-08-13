@@ -136,7 +136,9 @@ int main(int argc, char** argv) {
 	std::string selector_label = node_handle.param<std::string>("/prl/selector", "aif");
 	Selector selector = getSelector(selector_label);
 
-	LOG("YO WTF GOING ON AF ARGS");
+	std::string risk_object_id;
+	node_handle.getParam("/prl/risk_object_id", risk_object_id);
+
 	/////////////////   Transition System   /////////////////
 	
 	GF::DiscreteModel::ManipulatorModelProperties ts_props;
@@ -151,9 +153,7 @@ int main(int argc, char** argv) {
 		ts_props.init_obj_locations[ts_props.objects[i]] = obj_locations[i];
 	}
 
-	LOG("b4 gen ts");
 	std::shared_ptr<GF::DiscreteModel::TransitionSystem> ts = GF::DiscreteModel::Manipulator::generate(ts_props);
-	LOG("af gen ts");
 
 	if (show_propositions_only) {
 		ts->listPropositions();
@@ -199,10 +199,10 @@ int main(int argc, char** argv) {
 	prl.initialize(init_state);
 
 	// Make the action caller
-	GFROS::ActionCaller action_caller(node_handle, product, true);
+	GFROS::ActionCaller action_caller(node_handle, product, risk_object_id, true);
 
-	LOG("Running...");
 	// Run the PRL
+	LOG("Running...");
 	prl.run(p_ev, action_caller, max_planning_instances, selector);
 
 	LOG("Finished!");
