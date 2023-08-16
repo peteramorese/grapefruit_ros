@@ -1,6 +1,13 @@
 # Make this true to show the generated atomic propositions only
 # to help with writing your LTL formula
-show_propositions_only: false
+show_propositions_only: true
+
+# Save transition system under a given name
+save_ts_name: prl_manipulator
+
+# Read a saved transition system. If no TS was found under the name provided, it will be generated from scratch
+open_ts_name: prl_manipulator
+
 
 # Recurrence LTL formula
 formula: GF((pink_box_1_L5 & F(blue_box_1_L3 & F(pink_box_1_L1 & F(blue_box_1_L2))))) #GF((L1 & F(L2)) | F(R1 & F(R2)))

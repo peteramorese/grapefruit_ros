@@ -16,6 +16,7 @@
 
 // GFROS
 #include "ActionCaller.h"
+#include "TSCacher.h"
 
 static const std::string node_name = "prl_ros_node";
 constexpr uint64_t N = 2;
@@ -139,6 +140,9 @@ int main(int argc, char** argv) {
 	std::string risk_object_id;
 	node_handle.getParam("/prl/risk_object_id", risk_object_id);
 
+	std::string open_ts_name = node_handle.param("/prl/open_ts_name", std::string());
+	std::string save_ts_name = node_handle.param("/prl/save_ts_name", std::string());
+	
 	/////////////////   Transition System   /////////////////
 	
 	GF::DiscreteModel::ManipulatorModelProperties ts_props;
@@ -153,7 +157,21 @@ int main(int argc, char** argv) {
 		ts_props.init_obj_locations[ts_props.objects[i]] = obj_locations[i];
 	}
 
-	std::shared_ptr<GF::DiscreteModel::TransitionSystem> ts = GF::DiscreteModel::Manipulator::generate(ts_props);
+	std::shared_ptr<GF::DiscreteModel::TransitionSystem> ts;
+
+	// If opening an existing ts, check if the model properties are equivalent
+	GFROS::ManipulatorTSCacheHandler cache_handler(node_handle);
+	if (open_ts_name.empty() || !cache_handler.get(open_ts_name, ts_props, ts)) {
+		// If TS was not generated, that means a cached file was not found, so generate
+		ROS_INFO_STREAM("Generating transition system...");
+		ts = GF::DiscreteModel::Manipulator::generate(ts_props);
+		ROS_INFO_STREAM("Done!");
+	}
+
+	if (!save_ts_name.empty()) {
+		LOG("MAKING TS");
+		cache_handler.make(save_ts_name, ts_props, *ts);
+	}
 
 	if (show_propositions_only) {
 		ts->listPropositions();

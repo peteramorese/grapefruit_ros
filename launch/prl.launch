@@ -19,5 +19,7 @@
     <arg name="config_directory" value="$(arg config_directory)"/>
   </include>
 
-  <node name="prl_ros_node" pkg="grapefruit_ros" type="prl_ros_node" respawn="false" output="screen"/>
+  <node name="prl_ros_node" pkg="grapefruit_ros" type="prl_ros_node" respawn="false" output="screen">
+    <param name="ts_cache_dir" value="$(find grapefruit_ros)/serialized_transition_systems"/>
+  </node>
 </launch>
