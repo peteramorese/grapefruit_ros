@@ -25,6 +25,7 @@ class ManipulatorTSCacheHandler {
             ts_szr.done();
             props.serialize(props_szr);
             props_szr.done();
+
         }
 
         bool get(const std::string& name, const GF::DiscreteModel::ManipulatorModelProperties& props, std::shared_ptr<GF::DiscreteModel::TransitionSystem>& ts) {

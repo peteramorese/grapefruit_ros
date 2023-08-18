@@ -142,7 +142,7 @@ int main(int argc, char** argv) {
 
 	std::string open_ts_name = node_handle.param("/prl/open_ts_name", std::string());
 	std::string save_ts_name = node_handle.param("/prl/save_ts_name", std::string());
-	
+
 	/////////////////   Transition System   /////////////////
 	
 	GF::DiscreteModel::ManipulatorModelProperties ts_props;
