@@ -84,7 +84,7 @@ dw_top: {
   default: {
     x: 0.4,
     y: 0.00,
-    z: 0.19,
+    z: 0.195,
   },
   detection_radius: 0.20, 
   orientation_type: up_x

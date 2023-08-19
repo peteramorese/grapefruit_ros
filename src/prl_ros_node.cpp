@@ -169,7 +169,6 @@ int main(int argc, char** argv) {
 	}
 
 	if (!save_ts_name.empty()) {
-		LOG("MAKING TS");
 		cache_handler.make(save_ts_name, ts_props, *ts);
 	}
 
@@ -183,6 +182,7 @@ int main(int argc, char** argv) {
  	std::vector<GF::FormalMethods::DFAptr> dfas(1);
 	dfas[0].reset(new GF::FormalMethods::DFA());
 	dfas[0]->generateFromFormula(formula);
+	dfas[0]->print();
 
 	ts->addAlphabet(dfas[0]->getAlphabet());
 
@@ -214,6 +214,8 @@ int main(int argc, char** argv) {
 
 	// Initialize the agent's state
 	GF::DiscreteModel::State init_state = GF::DiscreteModel::Manipulator::makeInitState(ts_props, ts);
+	LOG("Init state:");
+	init_state.print();
 	prl.initialize(init_state);
 
 	// Make the action caller

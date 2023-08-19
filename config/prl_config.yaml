@@ -8,9 +8,12 @@ save_ts_name: prl_manipulator
 # Read a saved transition system. If no TS was found under the name provided, it will be generated from scratch
 open_ts_name: prl_manipulator
 
-
 # Recurrence LTL formula
-formula: GF((pink_box_1_L5 & F(blue_box_1_L3 & F(pink_box_1_L1 & F(blue_box_1_L2))))) #GF((L1 & F(L2)) | F(R1 & F(R2)))
+formula: >
+  GF(pitcher_dw_r & mug_dw_l & small_cup_dw_c & lid_dw_top & F(pitcher_L1 & mug_L0 & small_cup_L2 & lid_lid_loc)) 
+  & G(!lid_lid_loc -> (pitcher_dw_r & mug_dw_l & small_cup_dw_c))
+#formula: GF(pitcher_dw_r & lid_dw_top & F(pitcher_L1 & lid_lid_loc)) & G(!lid_lid_loc -> (pitcher_dw_r))
+
 
 # Number of episodes
 instances: 10

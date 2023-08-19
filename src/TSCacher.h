@@ -17,7 +17,6 @@ class ManipulatorTSCacheHandler {
         }
 
         void make(const std::string& name, const GF::DiscreteModel::TransitionSystemModelProperties& props, const GF::DiscreteModel::TransitionSystem& ts) {
-            LOG("making ts file: " << m_fp + name + "_model.yaml");
             GF::Serializer ts_szr(m_fp + name + "_model.yaml");
             GF::Serializer props_szr(m_fp + name + "_props.yaml");
 
