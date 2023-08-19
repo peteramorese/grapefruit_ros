@@ -1,6 +1,6 @@
 # Make this true to show the generated atomic propositions only
 # to help with writing your LTL formula
-show_propositions_only: true
+show_propositions_only: false
 
 # Save transition system under a given name
 save_ts_name: prl_manipulator
