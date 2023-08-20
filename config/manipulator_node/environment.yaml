@@ -11,7 +11,7 @@ location_names:
 dw_l: { 
   default: {
     x: 0.4,
-    y: -0.076,
+    y: -0.078,
     z: 0.055,
   },
   object_classes: [
@@ -166,7 +166,7 @@ lid_loc: {
   default: {
     x: -0.40,
     y: -0.40,
-    z: 0.035,
+    z: 0.04,
   },
   detection_radius: 0.10, 
   orientation_type: up_x

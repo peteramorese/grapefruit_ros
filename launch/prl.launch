@@ -17,6 +17,7 @@
     <arg name="use_rviz" value="$(arg use_rviz)"/>
     <arg name="robot_ip" value="$(arg robot_ip)"/>
     <arg name="config_directory" value="$(arg config_directory)"/>
+    <arg name="arm_config" value="$(find grapefruit_ros)/config/manipulator_node/panda_arm_config.yaml"/>
   </include>
 
   <node name="prl_ros_node" pkg="grapefruit_ros" type="prl_ros_node" respawn="false" output="screen" cwd="node">

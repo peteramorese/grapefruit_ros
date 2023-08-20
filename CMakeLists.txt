@@ -29,6 +29,8 @@ catkin_package(
 
 set(GF_LIBRARY_DIR ${CMAKE_CURRENT_SOURCE_DIR}/grapefruit)
 
+add_definitions(-DROS_ASSERT_ENABLED)
+
 add_subdirectory(src)
 
 set(GF_BUILD_EXECUTABLES OFF) # Toggle executables OFF to not pollute
