@@ -29,7 +29,7 @@ dishwasher: {
     height: 0.155,
     base_thickness: 0.015,
     #base_thickness: 0.005,
-    front_wall_thickness: 0.02,
+    front_wall_thickness: 0.01,
     side_wall_thickness: 0.025,
   },
   primitive_type: bin,

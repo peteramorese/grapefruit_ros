@@ -10,9 +10,10 @@ open_ts_name: prl_manipulator
 
 # Recurrence LTL formula
 formula: >
-  GF(pitcher_dw_r & mug_dw_l & small_cup_dw_c & lid_dw_top & F(pitcher_L1 & mug_L0 & small_cup_L2 & lid_lid_loc)) 
-  & G(!lid_lid_loc -> (pitcher_dw_r & mug_dw_l & small_cup_dw_c))
-#formula: GF(pitcher_dw_r & lid_dw_top & F(pitcher_L1 & lid_lid_loc)) & G(!lid_lid_loc -> (pitcher_dw_r))
+  GF(small_cup_dw_c & ((pitcher_dw_r & mug_dw_l) | (pitcher_dw_l & mug_dw_r)) & lid_dw_top 
+    & F((small_cup_L0 | small_cup_L1 | small_cup_L2) & (pitcher_L0 | pitcher_L1 | pitcher_L2) & (mug_L0 | mug_L1 | mug_L2) & lid_lid_loc)) 
+  & G((!lid_lid_loc -> (small_cup_dw_c & ((pitcher_dw_r & mug_dw_l) | (pitcher_dw_l & mug_dw_r))))
+    & !(small_cup_dw_top | pitcher_dw_top | mug_dw_top))
 
 
 # Number of episodes

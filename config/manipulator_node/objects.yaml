@@ -15,7 +15,7 @@ mug: {
   },
   primitive_type: cup,
   orientation_type: up_x,
-  initial_location: L0,
+  initial_location: L2,
   # default class
 }
 
@@ -45,7 +45,7 @@ small_cup: {
   },
   primitive_type: cup,
   orientation_type: up_x,
-  initial_location: L2,
+  initial_location: L0,
   class: small_cup 
 }
 
