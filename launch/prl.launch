@@ -21,6 +21,6 @@
   </include>
 
   <node name="prl_ros_node" pkg="grapefruit_ros" type="prl_ros_node" respawn="false" output="screen" cwd="node">
-    <param name="ts_cache_dir" value="$(find grapefruit_ros)/serialized_transition_systems"/>
+    <param name="cache_dir" value="$(find grapefruit_ros)/serialized_transition_systems"/>
   </node>
 </launch>

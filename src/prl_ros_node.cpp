@@ -143,6 +143,10 @@ int main(int argc, char** argv) {
 	std::string open_ts_name = node_handle.param("/prl/open_ts_name", std::string());
 	std::string save_ts_name = node_handle.param("/prl/save_ts_name", std::string());
 
+	std::vector<int> save_instances = node_handle.param("/prl/save_instances", std::vector<int>());
+	
+	int start_instance = node_handle.param("/prl/start_instance", 0);
+
 	/////////////////   Transition System   /////////////////
 	
 	GF::DiscreteModel::ManipulatorModelProperties ts_props;
@@ -208,7 +212,12 @@ int main(int argc, char** argv) {
 	std::shared_ptr<PRL::DataCollector<N>> data_collector = std::make_shared<DataCollector<N>>(product, p_ev);
 
 	std::shared_ptr<BehaviorHandlerType> behavior_handler;
-	behavior_handler = std::make_shared<BehaviorHandlerType>(product, 1, confidence, default_mean_converted);
+
+	// If start instance is 0, start a fresh experiement
+	if (start_instance = 0) {
+		behavior_handler = std::make_shared<BehaviorHandlerType>(product, 1, confidence, default_mean_converted);
+	} else {
+	}
 
 	PRL::Learner<N> prl(behavior_handler, data_collector, n_efe_samples, true);
 

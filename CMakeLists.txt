@@ -9,10 +9,6 @@ add_compile_options(-lstdc++fs)
 
 find_package (Eigen3 3.3.7 REQUIRED NO_MODULE)
 
-#set(EIGEN_INCLUDE_DIR "/usr/local/include/eigen3")
-message("EIGEN INCUDE DIR HELLO: ${EIGEN3_INCLUDE_DIR}")
-include_directories("/usr/local/include/eigen3")
-
 find_package(catkin REQUIRED COMPONENTS
 	roscpp 
 	genmsg

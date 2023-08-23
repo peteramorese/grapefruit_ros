@@ -3,31 +3,42 @@
 show_propositions_only: false
 
 # Save transition system under a given name
-save_ts_name: prl_manipulator
+save_ts_name: dw_rack_scenario
 
 # Read a saved transition system. If no TS was found under the name provided, it will be generated from scratch
-open_ts_name: prl_manipulator
+open_ts_name: dw_rack_scenario
 
 # Recurrence LTL formula
 formula: >
-  GF(small_cup_dw_c & ((pitcher_dw_r & mug_dw_l) | (pitcher_dw_l & mug_dw_r)) & lid_dw_top 
-    & F((small_cup_L0 | small_cup_L1 | small_cup_L2) & (pitcher_L0 | pitcher_L1 | pitcher_L2) & (mug_L0 | mug_L1 | mug_L2) & lid_lid_loc)) 
-  & G((!lid_lid_loc -> (small_cup_dw_c & ((pitcher_dw_r & mug_dw_l) | (pitcher_dw_l & mug_dw_r))))
-    & !(small_cup_dw_top | pitcher_dw_top | mug_dw_top))
+  GF(
+    ((pitcher_dw_r & mug_dw_l) | (pitcher_dw_l & mug_dw_r)) & lid_dw_top
+    & (
+      F(pitcher_rack_0 | pitcher_rack_1 | (pitcher_dry & F(pitcher_floor_0 | pitcher_floor_1)))
+      & F(mug_rack_0 | mug_rack_1 | (mug_dry & F(mug_floor_0 | mug_floor_1)))
+      )
+    )
+  & G((!lid_lid_loc -> ((pitcher_dw_r & mug_dw_l) | (pitcher_dw_l & mug_dw_r)))
+    & !(pitcher_dw_top | mug_dw_top))
+
+#formula: >
+#  GF(small_cup_dw_c & ((pitcher_dw_r & mug_dw_l) | (pitcher_dw_l & mug_dw_r)) & lid_dw_top 
+#    & F((small_cup_L0 | small_cup_L1 | small_cup_L2) & (pitcher_L0 | pitcher_L1 | pitcher_L2) & (mug_L0 | mug_L1 | mug_L2) & lid_lid_loc)) 
+#  & G((!lid_lid_loc -> (small_cup_dw_c & ((pitcher_dw_r & mug_dw_l) | (pitcher_dw_l & mug_dw_r))))
+#    & !(small_cup_dw_top | pitcher_dw_top | mug_dw_top))
 
 
 # Number of episodes
 instances: 10
 
 # More samples increases accuracy of EFE info gain
-n_efe_samples: 400
+n_efe_samples: 1000
 
 confidence: 0.2
 
 # Preference
 pref_mean:
-  - 20.0
-  - 3.0
+  - 120.0
+  - 0.0
 pref_minimal_covariance:
   - 10.0
   - 4.0
@@ -35,8 +46,8 @@ pref_minimal_covariance:
 
 default_mean:
   - 1.0
-  - 1.0
+  - 0.0
 
 selector: aif
 
-risk_object_id: pitcher
+risk_object_id: mug

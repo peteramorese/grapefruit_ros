@@ -8,15 +8,15 @@
 
 namespace GFROS {
 
-class ManipulatorTSCacheHandler {
+class BehaviorCacheHandler {
     public:
-        ManipulatorTSCacheHandler(const ros::NodeHandle& nh) {
+        BehaviorCacheHandler(const ros::NodeHandle& nh) {
             nh.getParam("cache_dir", m_fp);
             m_fp.push_back('/');
             ROS_INFO_STREAM("TS cache directory: " << m_fp);
         }
 
-        void make(const std::string& name, const GF::DiscreteModel::TransitionSystemModelProperties& props, const GF::DiscreteModel::TransitionSystem& ts) {
+        void make(const std::string& name, const PRL::BehaviorHandler<SymbolicGraph, 2>, const GF::DiscreteModel::TransitionSystem& ts) {
             GF::Serializer ts_szr(m_fp + name + "_model.yaml");
             GF::Serializer props_szr(m_fp + name + "_props.yaml");
 
