@@ -13,7 +13,6 @@ class ManipulatorTSCacheHandler {
         ManipulatorTSCacheHandler(const ros::NodeHandle& nh) {
             nh.getParam("cache_dir", m_fp);
             m_fp.push_back('/');
-            ROS_INFO_STREAM("TS cache directory: " << m_fp);
         }
 
         void make(const std::string& name, const GF::DiscreteModel::TransitionSystemModelProperties& props, const GF::DiscreteModel::TransitionSystem& ts) {
@@ -24,7 +23,6 @@ class ManipulatorTSCacheHandler {
             ts_szr.done();
             props.serialize(props_szr);
             props_szr.done();
-
         }
 
         bool get(const std::string& name, const GF::DiscreteModel::ManipulatorModelProperties& props, std::shared_ptr<GF::DiscreteModel::TransitionSystem>& ts) {

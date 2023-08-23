@@ -2,11 +2,17 @@
 # to help with writing your LTL formula
 show_propositions_only: false
 
-# Save transition system under a given name
-save_ts_name: dw_rack_scenario
+# Save scenario under a given name
+save_scenario_name: dw_rack_scenario
 
-# Read a saved transition system. If no TS was found under the name provided, it will be generated from scratch
-open_ts_name: dw_rack_scenario
+# Read a saved scenario. If no TS was found under the name provided, it will be generated from scratch
+open_scenario_name: dw_rack_scenario
+
+save_instances:
+ - 1
+ - 9
+ - 49
+ - 99
 
 # Recurrence LTL formula
 formula: >
@@ -28,7 +34,7 @@ formula: >
 
 
 # Number of episodes
-instances: 10
+instances: 100
 
 # More samples increases accuracy of EFE info gain
 n_efe_samples: 1000

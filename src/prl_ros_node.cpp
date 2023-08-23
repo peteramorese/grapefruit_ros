@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 
 // ROS
 #include "ros/ros.h"
@@ -17,6 +18,7 @@
 // GFROS
 #include "ActionCaller.h"
 #include "TSCacher.h"
+#include "InstanceCacher.h"
 
 static const std::string node_name = "prl_ros_node";
 constexpr uint64_t N = 2;
@@ -140,8 +142,8 @@ int main(int argc, char** argv) {
 	std::string risk_object_id;
 	node_handle.getParam("/prl/risk_object_id", risk_object_id);
 
-	std::string open_ts_name = node_handle.param("/prl/open_ts_name", std::string());
-	std::string save_ts_name = node_handle.param("/prl/save_ts_name", std::string());
+	std::string open_scenario_name = node_handle.param("/prl/open_scenario_name", std::string());
+	std::string save_scenario_name = node_handle.param("/prl/save_scenario_name", std::string());
 
 	std::vector<int> save_instances = node_handle.param("/prl/save_instances", std::vector<int>());
 	
@@ -164,16 +166,16 @@ int main(int argc, char** argv) {
 	std::shared_ptr<GF::DiscreteModel::TransitionSystem> ts;
 
 	// If opening an existing ts, check if the model properties are equivalent
-	GFROS::ManipulatorTSCacheHandler cache_handler(node_handle);
-	if (open_ts_name.empty() || !cache_handler.get(open_ts_name, ts_props, ts)) {
+	GFROS::ManipulatorTSCacheHandler ts_cache_handler(node_handle);
+	if (open_scenario_name.empty() || !ts_cache_handler.get(open_scenario_name, ts_props, ts)) {
 		// If TS was not generated, that means a cached file was not found, so generate
 		ROS_INFO_STREAM("Generating transition system...");
 		ts = GF::DiscreteModel::Manipulator::generate(ts_props);
 		ROS_INFO_STREAM("Done!");
 	}
 
-	if (!save_ts_name.empty()) {
-		cache_handler.make(save_ts_name, ts_props, *ts);
+	if (!save_scenario_name.empty()) {
+		ts_cache_handler.make(save_scenario_name, ts_props, *ts);
 	}
 
 	if (show_propositions_only) {
@@ -214,9 +216,14 @@ int main(int argc, char** argv) {
 	std::shared_ptr<BehaviorHandlerType> behavior_handler;
 
 	// If start instance is 0, start a fresh experiement
-	if (start_instance = 0) {
+	GFROS::InstanceCacheHandler bh_cache_handler(node_handle);
+	if (start_instance == 0) {
 		behavior_handler = std::make_shared<BehaviorHandlerType>(product, 1, confidence, default_mean_converted);
 	} else {
+		if (!bh_cache_handler.get(open_scenario_name, *behavior_handler, start_instance)) {
+			// Exit, start instance was not found
+			return 1;
+		}
 	}
 
 	PRL::Learner<N> prl(behavior_handler, data_collector, n_efe_samples, true);
@@ -231,8 +238,27 @@ int main(int argc, char** argv) {
 	GFROS::ActionCaller action_caller(node_handle, product, risk_object_id, true);
 
 	// Run the PRL
-	LOG("Running...");
-	prl.run(p_ev, action_caller, max_planning_instances, selector);
+	if (save_instances.empty()) {
+		LOG("Running...");
+		prl.run(p_ev, action_caller, max_planning_instances, selector);
+	} else {
+		std::sort(save_instances.begin(), save_instances.end());
+		ROS_ASSERT_MSG(save_instances.front() > start_instance, "Must specify save instances that are greater than the 'start_instance'");
+		ROS_ASSERT_MSG(save_instances.back() < max_planning_instances, "Largest save instance is greater than max planning instances");
+		
+		if (save_instances.back() < (max_planning_instances - 1))
+			save_instances.push_back(max_planning_instances);
+
+		for (auto save_inst_it = save_instances.begin(); (save_inst_it + 1) != save_instances.end(); ++save_inst_it) {
+			uint32_t instance_i = *save_inst_it;
+			uint32_t instance_f = *(save_inst_it + 1);
+			uint32_t n_instances = instance_f - instance_i + 1;
+			prl.run(p_ev, action_caller, n_instances, selector);
+			// Save at the final instance
+			bh_cache_handler.make(save_scenario_name, *behavior_handler, instance_f);
+		}
+		
+	}
 
 	LOG("Finished!");
 	std::string total_cost_str{};
