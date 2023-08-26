@@ -148,6 +148,7 @@ int main(int argc, char** argv) {
 	std::vector<int> save_instances = node_handle.param("/prl/save_instances", std::vector<int>());
 	
 	int start_instance = node_handle.param("/prl/start_instance", 0);
+	bool use_saved_start_instance_init_state = node_handle.param("/prl/use_saved_start_instance_init_state", false);
 
 	/////////////////   Transition System   /////////////////
 	
@@ -155,8 +156,9 @@ int main(int argc, char** argv) {
 	node_handle.getParam("/environment/location_names", ts_props.locations);
 	node_handle.getParam("/objects/object_ids", ts_props.objects);
 
-	// TODO: remove assumption that init ee location is stow	
-	ts_props.init_ee_location = GF::DiscreteModel::ManipulatorModelProperties::s_stow;
+	// Make init ee location the first location (it does not matter)
+	ts_props.init_ee_location = ts_props.locations.front();
+	ts_props.include_stow = false;
 	std::vector<std::string> obj_locations = getObjectLocations(node_handle, ts_props.objects);
 	for (uint32_t i = 0; i < ts_props.objects.size(); ++i) {
 		// Number of objects must match the number of locations returned from getObjectLocations
@@ -210,6 +212,10 @@ int main(int argc, char** argv) {
 		default_mean_converted(i) = default_mean[i];
 	}
 		
+	// Make the init state
+	GF::DiscreteModel::State init_state = GF::DiscreteModel::Manipulator::makeInitState(ts_props, ts);
+	LOG("Init state:");
+	init_state.print();
 
 	std::shared_ptr<PRL::DataCollector<N>> data_collector = std::make_shared<DataCollector<N>>(product, p_ev);
 
@@ -220,18 +226,16 @@ int main(int argc, char** argv) {
 	if (start_instance == 0) {
 		behavior_handler = std::make_shared<BehaviorHandlerType>(product, 1, confidence, default_mean_converted);
 	} else {
-		if (!bh_cache_handler.get(open_scenario_name, *behavior_handler, start_instance)) {
+		behavior_handler = std::make_shared<BehaviorHandlerType>(product, 1, confidence);
+		GF::DiscreteModel::State* init_state_ptr = use_saved_start_instance_init_state ? &init_state : nullptr;
+		if (!bh_cache_handler.get(open_scenario_name, *behavior_handler, start_instance, init_state_ptr)) {
 			// Exit, start instance was not found
 			return 1;
 		}
 	}
-
 	PRL::Learner<N> prl(behavior_handler, data_collector, n_efe_samples, true);
 
 	// Initialize the agent's state
-	GF::DiscreteModel::State init_state = GF::DiscreteModel::Manipulator::makeInitState(ts_props, ts);
-	LOG("Init state:");
-	init_state.print();
 	prl.initialize(init_state);
 
 	// Make the action caller
@@ -255,7 +259,7 @@ int main(int argc, char** argv) {
 			uint32_t n_instances = instance_f - instance_i + 1;
 			prl.run(p_ev, action_caller, n_instances, selector);
 			// Save at the final instance
-			bh_cache_handler.make(save_scenario_name, *behavior_handler, instance_f);
+			bh_cache_handler.make(save_scenario_name, *behavior_handler, instance_f, prl.getCurrentState());
 		}
 		
 	}

@@ -1,0 +1,21 @@
+Locations:
+  - dw_l
+  - dw_c
+  - dw_r
+  - dw_top
+  - L0
+  - L1
+  - L2
+  - lid_loc
+Objects:
+  - mug
+  - pitcher
+  - small_cup
+  - lid
+Init EEF Location: stow
+Init Object Locations:
+  lid: lid_loc
+  mug: L2
+  pitcher: L1
+  small_cup: L0
+Include Stow: true

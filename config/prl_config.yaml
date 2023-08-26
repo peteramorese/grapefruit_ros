@@ -3,16 +3,18 @@
 show_propositions_only: false
 
 # Save scenario under a given name
-save_scenario_name: dw_rack_scenario
+#save_scenario_name: dw_rack_scenario_v2
 
 # Read a saved scenario. If no TS was found under the name provided, it will be generated from scratch
 open_scenario_name: dw_rack_scenario
 
-save_instances:
- - 1
- - 9
- - 49
- - 99
+#save_instances:
+# - 1
+# - 49
+# - 99
+# - 119
+
+start_instance: 119
 
 # Recurrence LTL formula
 formula: >
@@ -24,7 +26,7 @@ formula: >
       )
     )
   & G((!lid_lid_loc -> ((pitcher_dw_r & mug_dw_l) | (pitcher_dw_l & mug_dw_r)))
-    & !(pitcher_dw_top | mug_dw_top))
+    & !(holding_pitcher_dw_top | holding_mug_dw_top | holding_lid_dw_r | holding_lid_dw_l | holding_lid_floor_0 | holding_lid_floor_1 | holding_lid_dry))
 
 #formula: >
 #  GF(small_cup_dw_c & ((pitcher_dw_r & mug_dw_l) | (pitcher_dw_l & mug_dw_r)) & lid_dw_top 
@@ -34,7 +36,7 @@ formula: >
 
 
 # Number of episodes
-instances: 100
+instances: 10
 
 # More samples increases accuracy of EFE info gain
 n_efe_samples: 1000
@@ -43,15 +45,15 @@ confidence: 0.2
 
 # Preference
 pref_mean:
-  - 120.0
-  - 0.0
+  - 300.0
+  - 0.5
 pref_minimal_covariance:
-  - 10.0
-  - 4.0
-  - 6.0
+  - 400.0
+  - 0.0
+  - 2.0
 
 default_mean:
-  - 1.0
+  - 0.01
   - 0.0
 
 selector: aif
