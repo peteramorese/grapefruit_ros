@@ -8,13 +8,13 @@ show_propositions_only: false
 # Read a saved scenario. If no TS was found under the name provided, it will be generated from scratch
 open_scenario_name: dw_rack_scenario
 
-#save_instances:
-# - 1
-# - 49
-# - 99
-# - 119
+save_instances:
+ - 1
+ - 99
+ - 199
+ - 299
 
-start_instance: 119
+#start_instance: 119
 
 # Recurrence LTL formula
 formula: >
@@ -36,7 +36,7 @@ formula: >
 
 
 # Number of episodes
-instances: 10
+instances: 300
 
 # More samples increases accuracy of EFE info gain
 n_efe_samples: 1000
