@@ -1,0 +1,6191 @@
+Instance State:
+  ? - rack_1
+    - dry
+    - rack_1
+    - lid_loc
+    - F
+Behavior Handler:
+  Behavior Handler:
+    - Node: 2828
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4697
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4699
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2690
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2906
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4660
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2654
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4382
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4384
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 3832
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 3835
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2870
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4696
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4700
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4423
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4698
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2864
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2648
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 3833
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4385
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 3834
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 5004
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4998
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4999
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 5000
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4661
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4662
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4387
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4663
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2684
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4386
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 3872
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 3871
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 3873
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 3870
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4701
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2798
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4420
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2986
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 2
+        Updater:
+          0:
+            - 1.48022425
+            - 0
+          1:
+            - 1.48043036
+            - 0
+    - Node: 2943
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2961
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2947
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2948
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2224
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 2
+        Updater:
+          0:
+            - 1.48106313
+            - 0
+          1:
+            - 1.48126912
+            - 0
+    - Node: 2181
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 3
+        Updater:
+          0:
+            - 1.48147666
+            - 0
+          1:
+            - 1.48147941
+            - 0
+          2:
+            - 1.48136938
+            - 0
+    - Node: 2199
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2185
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2185
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 33.0774574
+            - 0
+    - Node: 2186
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 33.8801842
+            - 0
+    - Node: 1676
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1676
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1667
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.8747215
+            - 3.73816943
+    - Node: 1695
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1673
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 2
+        Updater:
+          0:
+            - 54.1735535
+            - 0
+          1:
+            - 34.6735611
+            - 0
+    - Node: 1739
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.974741
+            - 0
+    - Node: 1722
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1731
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1664
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 3
+        Updater:
+          0:
+            - 1.48149049
+            - 0
+          1:
+            - 1.48141205
+            - 0
+          2:
+            - 1.48128748
+            - 0
+    - Node: 1664
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 3
+        Updater:
+          0:
+            - 35.2732811
+            - 0
+          1:
+            - 31.4749165
+            - 0
+          2:
+            - 34.7704086
+            - 0
+    - Node: 1718
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1209
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 218.574188
+            - 0
+    - Node: 1208
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1210
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 19.6743851
+            - 0
+    - Node: 1211
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1497
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1575
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1574
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1576
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1429
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1430
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1259
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1444
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1261
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1561
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1577
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1577
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48022068
+            - 0
+    - Node: 1260
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1262
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1358
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1359
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1360
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1361
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1269
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1362
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1363
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1364
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1268
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1422
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 34.6770515
+            - 0
+    - Node: 1739
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1467
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1468
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1422
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1469
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1470
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 30.9733639
+            - 0
+    - Node: 2199
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.8725605
+            - 2.51581049
+    - Node: 1471
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1472
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1423
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1224
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1506
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1667
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1507
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1273
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1508
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1274
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 309
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48118162
+            - 0
+    - Node: 1258
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 381
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 100
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 537
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1186
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 381
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1440
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 17.873558
+            - 0
+    - Node: 442
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 443
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.7716141
+            - 2.83819151
+    - Node: 383
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 83.4719696
+            - 4.13833952
+    - Node: 1442
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 439
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.873642
+            - 3.34942555
+    - Node: 357
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 23
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1416
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 321
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1428
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 354
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 562
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1474
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 354
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1461
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 427
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 358
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 438
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.8725471
+            - 1.82259881
+    - Node: 431
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 35.7718887
+            - 5.26446915
+    - Node: 205
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48133516
+            - 0
+    - Node: 419
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 323
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 33.2765808
+            - 0
+    - Node: 311
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.4815439
+            - 0
+    - Node: 4422
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 583
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.2706261
+            - 0
+    - Node: 562
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1256
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1705
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 308
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 563
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1257
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 645
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48020351
+            - 0
+    - Node: 345
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 27
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1420
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 347
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 25
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48136318
+            - 0
+    - Node: 380
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.4810487
+            - 0
+    - Node: 123
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4383
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 536
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1185
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 3
+        Updater:
+          0:
+            - 42.6749077
+            - 0
+          1:
+            - 31.7715778
+            - 0
+          2:
+            - 37.2717972
+            - 0
+    - Node: 342
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 390
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 2
+        Updater:
+          0:
+            - 1.48132014
+            - 0
+          1:
+            - 1.4814682
+            - 0
+    - Node: 215
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 156
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48049986
+            - 0
+    - Node: 415
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1507
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1474
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 37.0744324
+            - 0
+    - Node: 101
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.870533
+            - 0
+    - Node: 2943
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 3
+        Updater:
+          0:
+            - 1.48024464
+            - 0
+          1:
+            - 1.48023641
+            - 0
+          2:
+            - 1.48073518
+            - 0
+    - Node: 538
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1187
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 20.2743874
+            - 0
+    - Node: 378
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.9742279
+            - 3.28440475
+    - Node: 1236
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 2
+        Updater:
+          0:
+            - 1.48023069
+            - 0
+          1:
+            - 1.48020601
+            - 0
+    - Node: 355
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1462
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4421
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 582
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.1715508
+            - 0
+    - Node: 561
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1263
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2961
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48022735
+            - 0
+    - Node: 426
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 367
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.6752434
+            - 0
+    - Node: 646
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1340
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1735
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.2801361
+            - 0
+    - Node: 414
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48135316
+            - 0
+    - Node: 414
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1473
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2948
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 417
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 418
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 306
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 2
+        Updater:
+          0:
+            - 1.48137081
+            - 0
+          1:
+            - 1.48170292
+            - 0
+    - Node: 318
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48145413
+            - 0
+    - Node: 185
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 606
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 2
+        Updater:
+          0:
+            - 34.1761856
+            - 0
+          1:
+            - 37.7716751
+            - 0
+    - Node: 1255
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 227
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1476
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 211
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 33.1762772
+            - 0
+    - Node: 213
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 366
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.8713531
+            - 0
+    - Node: 217
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48126173
+            - 0
+    - Node: 355
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48136663
+            - 0
+    - Node: 563
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 217
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 29.1707211
+            - 0.61642766
+    - Node: 635
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 358
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 29.2750473
+            - 0
+    - Node: 1417
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 225
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1478
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 347
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48111391
+            - 0
+    - Node: 6
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 571
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 35.66819
+            - 0
+    - Node: 225
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 378
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48092437
+            - 0
+    - Node: 142
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1480
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 223
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 357
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48088181
+            - 0
+    - Node: 561
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 223
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 148
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.4802283
+            - 0
+    - Node: 633
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 205
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 173.871811
+            - 0
+    - Node: 655
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48024631
+            - 0
+    - Node: 132
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 596
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48023832
+            - 0
+    - Node: 441
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1390
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1205
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 98
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 35.0740738
+            - 0
+    - Node: 369
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48145509
+            - 0
+    - Node: 395
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48143363
+            - 0
+    - Node: 525
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 44.5715294
+            - 0
+    - Node: 1276
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 169
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 394
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 2
+        Updater:
+          0:
+            - 34.5733147
+            - 5.15112162
+          1:
+            - 33.0780296
+            - 3.55371046
+    - Node: 394
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 524
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 438
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1391
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1206
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 19.1749191
+            - 0
+    - Node: 99
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 366
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48137569
+            - 0
+    - Node: 1212
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 105
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1277
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 19.6756744
+            - 0
+    - Node: 170
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 367
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48111367
+            - 0
+    - Node: 213
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 33.4715576
+            - 0
+    - Node: 526
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 392
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2834
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 647
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48027205
+            - 0
+    - Node: 171
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1207
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 108
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 101
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48047554
+            - 0
+    - Node: 138
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 586
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48023558
+            - 0
+    - Node: 173
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1264
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 3830
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 370
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.0729828
+            - 0
+    - Node: 1445
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 43
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48025274
+            - 0
+    - Node: 41
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 143
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 18
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.4814682
+            - 0
+    - Node: 1419
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 36.5757942
+            - 0
+    - Node: 207
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48122084
+            - 0
+    - Node: 429
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 33.5819092
+            - 4.3582859
+    - Node: 41
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48022377
+            - 0
+    - Node: 429
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48103452
+            - 0
+    - Node: 611
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 33.0699883
+            - 0
+    - Node: 4659
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 526
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 97
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 20.7775898
+            - 0
+    - Node: 1204
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 320
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 37
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 27
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 52.5801659
+            - 0
+    - Node: 47
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 47
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 431
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48136604
+            - 0
+    - Node: 609
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 524
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48023105
+            - 0
+    - Node: 45
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1544
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1225
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 19.6753292
+            - 0
+    - Node: 22
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48130035
+            - 0
+    - Node: 3868
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 558
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 40
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.871212
+            - 0
+    - Node: 657
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 40
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1257
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 610
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4658
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2792
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 525
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 417
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 38.3769264
+            - 3.59160709
+    - Node: 1481
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 45
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 42
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.7707787
+            - 0
+    - Node: 369
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.9688072
+            - 0
+    - Node: 3197
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 42
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.4802109
+            - 0
+    - Node: 441
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 527
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 322
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.3776894
+            - 0
+    - Node: 1538
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 133
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 597
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 658
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.2783089
+            - 0
+    - Node: 28
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48119199
+            - 0
+    - Node: 1409
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 46
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1545
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 371
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48166335
+            - 0
+    - Node: 3869
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 559
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 342
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 43
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 801.470337
+            - 0
+    - Node: 46
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48043299
+            - 0
+    - Node: 430
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 608
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1543
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 382
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.2693462
+            - 2.6401751
+    - Node: 1441
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 39
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 111
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1202
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 21
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1554
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 370
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 134
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.4802413
+            - 0
+    - Node: 102
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 539
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 33.0706177
+            - 0
+    - Node: 443
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48143792
+            - 0
+    - Node: 1388
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2435
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 96
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1198
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 415
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1722
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 181
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2990
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1199
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2991
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 5
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 346
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 570
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2900
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 343
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 22
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1695
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1555
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 124
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 21.3783245
+            - 0
+    - Node: 3831
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 371
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 2
+        Updater:
+          0:
+            - 37.3796463
+            - 0
+          1:
+            - 31.7800369
+            - 0
+    - Node: 1446
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 36
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48042929
+            - 0
+    - Node: 10
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.8716297
+            - 1.54750919
+    - Node: 1559
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 109
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48041236
+            - 0
+    - Node: 594
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48023415
+            - 0
+    - Node: 207
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 33.6531258
+            - 0
+    - Node: 321
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2947
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 121
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 382
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.481197
+            - 0
+    - Node: 418
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 40.7768936
+            - 6.78153229
+    - Node: 7
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 3197
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.2712994
+            - 0
+    - Node: 128
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 380
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.0737991
+            - 3.36168838
+    - Node: 1735
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1447
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1490
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 37
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 522
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 3
+        Updater:
+          0:
+            - 1.48043132
+            - 0
+          1:
+            - 1.48022366
+            - 0
+          2:
+            - 1.48051798
+            - 0
+    - Node: 109
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1200
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 11
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 29.8774872
+            - 0
+    - Node: 430
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 3
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1226
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 25.9733543
+            - 0
+    - Node: 1343
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 148
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.9728794
+            - 0
+    - Node: 23
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 33.5735283
+            - 3.95390368
+    - Node: 125
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 125
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.4802314
+            - 0
+    - Node: 146
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 610
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48023331
+            - 0
+    - Node: 122
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 383
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.481305
+            - 0
+    - Node: 1184
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 19.6769123
+            - 0
+    - Node: 419
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2986
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 0
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 18.3097019
+            - 0
+    - Node: 2435
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48122001
+            - 0
+    - Node: 345
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 24
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.4814173
+            - 0
+    - Node: 346
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2181
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 3
+        Updater:
+          0:
+            - 32.4716454
+            - 0
+          1:
+            - 31.4689903
+            - 0
+          2:
+            - 36.3697701
+            - 0
+    - Node: 1421
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 20.9755535
+            - 0
+    - Node: 442
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48089778
+            - 0
+    - Node: 1379
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 103
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 20.2745399
+            - 0
+    - Node: 135
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 599
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.480443
+            - 0
+    - Node: 390
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 33.7752151
+            - 4.57467747
+    - Node: 8
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 309
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1400
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 137
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 585
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48047984
+            - 0
+    - Node: 172
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1271
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 134
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 598
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48044479
+            - 0
+    - Node: 1560
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1410
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2228
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 10
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 183
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 583
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48024273
+            - 0
+    - Node: 596
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 159
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 16.6725426
+            - 0
+    - Node: 25
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 51.9720917
+            - 0
+    - Node: 1542
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 158
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 18.8747578
+            - 0
+    - Node: 606
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48024881
+            - 0
+    - Node: 36
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 34.3713684
+            - 0
+    - Node: 29
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.7780743
+            - 0
+    - Node: 320
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 28
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 29.6279907
+            - 0
+    - Node: 323
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48129654
+            - 0
+    - Node: 145
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 609
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 215
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48133194
+            - 0
+    - Node: 306
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 3
+        Updater:
+          0:
+            - 31.7714825
+            - 0
+          1:
+            - 36.0764275
+            - 0
+          2:
+            - 174.269852
+            - 0
+    - Node: 582
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48026776
+            - 0
+    - Node: 127
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 23.5779076
+            - 0
+    - Node: 1189
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 21.6746101
+            - 0
+    - Node: 19
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 322
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1560
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1339
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 144
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 608
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 126
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1188
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 16.7745991
+            - 0
+    - Node: 18
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 33.5708885
+            - 3.8073535
+    - Node: 149
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 147
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 611
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48022687
+            - 0
+    - Node: 182
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1241
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 16.6763401
+            - 0
+    - Node: 39
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 34.4769821
+            - 0
+    - Node: 24
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.3726006
+            - 0
+    - Node: 1541
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 157
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 17.0744286
+            - 0
+    - Node: 120
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1190
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 16.6737061
+            - 0
+    - Node: 156
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.5709629
+            - 0
+    - Node: 141
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 155
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 38.9744797
+            - 0
+    - Node: 154
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 153
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 152
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 311
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.577404
+            - 0
+    - Node: 1185
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 3
+        Updater:
+          0:
+            - 1.48024607
+            - 0
+          1:
+            - 1.48028767
+            - 0
+          2:
+            - 1.48022711
+            - 0
+    - Node: 139
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 587
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.4801985
+            - 0
+    - Node: 174
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1265
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 219
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.4812001
+            - 0
+    - Node: 310
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.3774376
+            - 0
+    - Node: 1401
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1341
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 227
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 382.077332
+            - 1.52588677
+    - Node: 642
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1240
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 19.5795155
+            - 0
+    - Node: 181
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 168
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1267
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 308
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.5749531
+            - 0
+    - Node: 1460
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1235
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 136
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1270
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 180
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 175
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1266
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 395
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 29.8715191
+            - 2.63321567
+    - Node: 1217
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 190
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1252
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1222
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 179
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 219
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 52.5701485
+            - 1.76611006
+    - Node: 1714
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 189
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 186
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 570
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1216
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 189
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 594
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 2
+        Updater:
+          0:
+            - 32.0785675
+            - 0
+          1:
+            - 31.6733875
+            - 0
+    - Node: 573
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1275
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 38.6745033
+            - 0
+    - Node: 1218
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 191
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1253
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1223
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 188
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1542
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 211
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 318
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 34.6696205
+            - 0
+    - Node: 5002
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1377
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1221
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 178
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 599
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.7731819
+            - 0
+    - Node: 1272
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 19.875061
+            - 0
+    - Node: 187
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 571
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1249
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1220
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 177
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2186
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 598
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 574
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48020673
+            - 0
+    - Node: 392
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 83.778183
+            - 2.00460696
+    - Node: 1491
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 21
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48105824
+            - 0
+    - Node: 359
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 33.3714523
+            - 0
+    - Node: 1418
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 142
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.1699867
+            - 0
+    - Node: 1219
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 184
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1254
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2229
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 11
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 176
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 597
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 359
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.4812634
+            - 0
+    - Node: 343
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 575
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48024595
+            - 0
+    - Node: 393
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 527
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 29.6707954
+            - 0
+    - Node: 393
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1342
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 559
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1557
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 426
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 536
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 534
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48023784
+            - 0
+    - Node: 635
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 534
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 33.3739204
+            - 0
+    - Node: 1215
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 522
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 2
+        Updater:
+          0:
+            - 35.3720474
+            - 0
+          1:
+            - 33.6718483
+            - 0
+    - Node: 642
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 558
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1556
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 538
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 19
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 645
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 631
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 631
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4424
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2990
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 585
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 4425
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2991
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 586
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 654
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48045766
+            - 0
+    - Node: 654
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 140
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1239
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 16.8750381
+            - 0
+    - Node: 655
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.4735985
+            - 0
+    - Node: 539
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48022103
+            - 0
+    - Node: 647
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 37.0789757
+            - 0
+    - Node: 1205
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48023033
+            - 0
+    - Node: 574
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 630
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 630
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.4731483
+            - 0
+    - Node: 643
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 150
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1337
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 643
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 129
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1236
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 2
+        Updater:
+          0:
+            - 34.4698257
+            - 0
+          1:
+            - 35.1729965
+            - 0
+    - Node: 427
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 537
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 439
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48131907
+            - 0
+    - Node: 633
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 575
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 29.7175579
+            - 0
+    - Node: 659
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48023701
+            - 0
+    - Node: 29
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 659
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.3680725
+            - 0
+    - Node: 658
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 657
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 151
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 18.8743763
+            - 0
+    - Node: 1338
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 634
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48023772
+            - 0
+    - Node: 634
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 587
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 30.9520435
+            - 0
+    - Node: 646
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 573
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 31.7740936
+            - 0
+    - Node: 1362
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1393
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1558
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1415
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1394
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1452
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1512
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1513
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1511
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1673
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 2
+        Updater:
+          0:
+            - 1.48132074
+            - 0
+          1:
+            - 1.48112416
+            - 0
+    - Node: 1509
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1510
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 107
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1214
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 106
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1213
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 5003
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 19.7754498
+            - 0
+    - Node: 1378
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 5001
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1376
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1375
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1374
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2229
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 32.1808472
+            - 0
+    - Node: 1373
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1451
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1450
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1449
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1448
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1370
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2228
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1372
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1371
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 104
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1203
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 110
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1201
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1369
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 2224
+      Action: transport
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 2
+        Updater:
+          0:
+            - 35.4764519
+            - 0
+          1:
+            - 37.9637947
+            - 0
+    - Node: 1368
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1466
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1465
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1464
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1414
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1413
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1412
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1463
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1411
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1367
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1366
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1496
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1495
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1718
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1494
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1350
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1493
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1492
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1714
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48126626
+            - 0
+    - Node: 1490
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1349
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1479
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1705
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48104775
+            - 0
+    - Node: 1477
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1348
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1475
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1347
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1346
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1345
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1344
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 172
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1573
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1572
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1571
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1570
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 131
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1238
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 2
+        Updater:
+          0:
+            - 20.2775154
+            - 0
+          1:
+            - 39.6738358
+            - 0
+    - Node: 1427
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 6
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1426
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 130
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1237
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 39.3742065
+            - 0
+    - Node: 5
+      Action: grasp
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 1
+        Updater:
+          0:
+            - 1.48027444
+            - 0
+    - Node: 1425
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1424
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1731
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1443
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1439
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1399
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1395
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1540
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1398
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1396
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 310
+      Action: release
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1539
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1397
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1392
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1365
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1251
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1389
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
+    - Node: 1250
+      Action: transit
+      Updater:
+        UCB:
+          Confidence: 0.200000003
+          N: 0
+        Updater:
+          {}
