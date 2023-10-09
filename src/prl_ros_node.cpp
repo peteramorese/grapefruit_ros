@@ -245,6 +245,9 @@ int main(int argc, char** argv) {
 	if (save_instances.empty()) {
 		LOG("Running...");
 		prl.run(p_ev, action_caller, max_planning_instances, selector);
+	} else if (save_instances.size() == 1) {
+		prl.run(p_ev, action_caller, max_planning_instances, selector);
+		bh_cache_handler.make(save_scenario_name, *behavior_handler, save_instances[0], prl.getCurrentState());
 	} else {
 		std::sort(save_instances.begin(), save_instances.end());
 		ROS_ASSERT_MSG(save_instances.front() > start_instance, "Must specify save instances that are greater than the 'start_instance'");

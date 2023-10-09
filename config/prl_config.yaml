@@ -6,15 +6,11 @@ show_propositions_only: false
 save_scenario_name: big_run
 
 # Read a saved scenario. If no TS was found under the name provided, it will be generated from scratch
-#open_scenario_name: dw_rack_scenario
+open_scenario_name: big_run
 
 save_instances:
- - 1
- - 99
- - 199
- - 299
- - 399
- - 499
+        - 199
+        #- 499
 
 #start_instance: 119
 
@@ -38,7 +34,7 @@ formula: >
 
 
 # Number of episodes
-instances: 500
+instances: 201
 
 # More samples increases accuracy of EFE info gain
 n_efe_samples: 1000
