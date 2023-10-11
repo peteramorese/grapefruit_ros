@@ -23,6 +23,7 @@ formula: >
       & F(mug_rack_0 | mug_rack_1 | (mug_dry & F(mug_floor_0 | mug_floor_1)))
       )
     )
+  & G(holding_lid_dw_top | lid_dw_top | holding_lid_lid_loc | lid_lid_loc)
   & G((!lid_lid_loc -> ((pitcher_dw_r & mug_dw_l) | (pitcher_dw_l & mug_dw_r)))
     & !(holding_pitcher_dw_top | holding_mug_dw_top | holding_lid_dw_r | holding_lid_dw_l | holding_lid_floor_0 | holding_lid_floor_1 | holding_lid_dry))
 
@@ -43,7 +44,7 @@ confidence: 0.2
 
 # Preference
 pref_mean:
-  - 300.0
+  - 450.0
   - 0.5
 pref_minimal_covariance:
   - 400.0

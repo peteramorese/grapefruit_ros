@@ -14,7 +14,7 @@ stow_joint_values:
   - 0.785398
 
 # OMPL planner ID
-planner_id: RRTstar
+planner_id: PRMstar
 planning_time: 10.0
 
 # OMPL optimal planner ID (used for smooth plan linear movement)
