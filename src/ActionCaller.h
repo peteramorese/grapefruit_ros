@@ -102,11 +102,31 @@ class ActionCaller {
         /// @param eef_trajectory Sequence of eef poses along trajectory
         /// @param waypoint_durations Time duration of each pose
         /// @return Total risk
-        static double getHeightAboveGroundRisk(const std::vector<geometry_msgs::Pose>& eef_trajectory, const std::vector<double>& waypoint_durations) {
+        static double getHeightAboveGroundRisk(const std::vector<geometry_msgs::Pose>& eef_trajectory, const std::vector<double>& waypoint_durations, double execution_time) {
+            auto riskFunction = [](double time, double height_m) -> double {
+                return time * std::pow(100.0 * height_m, 2);
+            };
+
             double risk = 0.0;
+            double movement_time = 0.0;
             for (std::size_t i = 0; i < eef_trajectory.size(); ++i) {
-                risk += waypoint_durations[i] * eef_trajectory[i].position.z;
+                risk += riskFunction(waypoint_durations[i], eef_trajectory[i].position.z);
+                movement_time += waypoint_durations[i];
             }
+
+            // Add the risk for holding the object during planning
+            double planning_time = execution_time - movement_time; // Planning time is the total time (execution) minus the time spent moving
+
+            ROS_INFO_STREAM("Execution time: " << execution_time << " Planning time: " << planning_time);
+            ROS_INFO_STREAM("Risk from movement: " << risk);
+            ROS_INFO_STREAM("Risk from holding: " << riskFunction(planning_time, eef_trajectory[0].position.z));
+
+            // Holding risk before trajectory
+            risk += riskFunction(0.5 * planning_time, eef_trajectory.front().position.z);
+
+            // Holding risk after trajectory
+            risk += riskFunction(0.5 * planning_time, eef_trajectory.back().position.z);
+
             return risk;
         }
 
@@ -184,7 +204,7 @@ class ActionCaller {
             if (transport_client.call(srv)) {
                 if (srv.response.mv_props.execution_success) {
                     cost_sample[0] = srv.response.mv_props.execution_time;
-                    cost_sample[1] = (get_risk) ? getHeightAboveGroundRisk(srv.response.mv_props.eef_trajectory, srv.response.mv_props.waypoint_durations) : 0.0f;
+                    cost_sample[1] = (get_risk) ? getHeightAboveGroundRisk(srv.response.mv_props.eef_trajectory, srv.response.mv_props.waypoint_durations, srv.response.mv_props.execution_time) : 0.0f;
                     return true;
                 } else {
                     return false;
