@@ -104,7 +104,8 @@ class ActionCaller {
         /// @return Total risk
         static double getHeightAboveGroundRisk(const std::vector<geometry_msgs::Pose>& eef_trajectory, const std::vector<double>& waypoint_durations, double execution_time) {
             auto riskFunction = [](double time, double height_m) -> double {
-                return time * std::pow(100.0 * height_m, 2);
+                return 0.01 * time * std::pow(10.0 * height_m, 2);
+                //return time * height_m;
             };
 
             double risk = 0.0;
