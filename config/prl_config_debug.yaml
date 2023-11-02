@@ -1,0 +1,51 @@
+# Make this true to show the generated atomic propositions only
+# to help with writing your LTL formula
+show_propositions_only: false
+
+# Save scenario under a given name
+save_scenario_name: big_run_debug
+
+# Read a saved scenario. If no TS was found under the name provided, it will be generated from scratch
+open_scenario_name: big_run_debug
+
+save_instances:
+        - 199
+        #- 499
+
+#start_instance: 119
+
+# test formula vvvvvvvvvvvvvvvvvvvv
+cosafe_formula: >
+  F(
+    (mug_dw_l | mug_dw_r)
+    &  F(mug_rack_0 | mug_rack_1 | (mug_dry & F(mug_floor_0 | mug_floor_1)))
+    )
+
+safety_formula: >
+  G(!holding_mug_dw_top)
+
+
+# Number of episodes
+instances: 201
+
+# More samples increases accuracy of EFE info gain
+n_efe_samples: 1000
+
+confidence: 0.0
+
+# Preference
+pref_mean:
+  - 450.0
+  - 0.5
+pref_minimal_covariance:
+  - 400.0
+  - 0.0
+  - 2.0
+
+default_mean:
+  - 0.01
+  - 0.01
+
+selector: aif
+
+risk_object_id: mug

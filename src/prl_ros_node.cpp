@@ -115,8 +115,9 @@ int main(int argc, char** argv) {
 	
 	bool exclude_plans = node_handle.param("/prl/exclude_plans", false);
 
-	std::string formula;
-	node_handle.getParam("/prl/formula", formula);
+	std::string cosafe_formula, safety_formula;
+	node_handle.getParam("/prl/cosafe_formula", cosafe_formula);
+	node_handle.getParam("/prl/safety_formula", safety_formula);
 
 	int max_planning_instances;
 	node_handle.getParam("/prl/instances", max_planning_instances);
@@ -187,12 +188,25 @@ int main(int argc, char** argv) {
 
 	/////////////////   DFAs   /////////////////
 
- 	std::vector<GF::FormalMethods::DFAptr> dfas(1);
+ 	std::vector<GF::FormalMethods::DFAptr> dfas(2);
 	dfas[0].reset(new GF::FormalMethods::DFA());
-	dfas[0]->generateFromFormula(formula);
+	dfas[0]->generateFromFormula(cosafe_formula);
+	GF::Node init_cs_state = dfas[0]->getInitStates()[0];
+	GF::Node acc_cs_state = *dfas[0]->getAcceptingStates().begin();
+	dfas[0]->disconnect(acc_cs_state, acc_cs_state, "1");
+	dfas[0]->connect(acc_cs_state, init_cs_state, "1");
 	dfas[0]->print();
 
-	ts->addAlphabet(dfas[0]->getAlphabet());
+
+	dfas[1].reset(new GF::FormalMethods::DFA());
+	dfas[1]->generateFromFormula(safety_formula);
+
+	GF::FormalMethods::Alphabet combined_alphabet;
+	for (const auto& dfa : dfas) {
+		combined_alphabet = combined_alphabet + dfa->getAlphabet();
+	}
+
+	ts->addAlphabet(combined_alphabet);
 
 	/////////////////   Planner   /////////////////
 

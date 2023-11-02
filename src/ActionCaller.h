@@ -64,23 +64,23 @@ class ActionCaller {
             updateEnvironment();
 
 
-            if (action == "grasp") {
+            if (action.starts_with("grasp")) {
                 ROS_INFO("Calling action: GRASP");
                 if (!grasp(cost_sample)) {
                     ROS_ASSERT_MSG(false, "Grasp failed, killing...");
                 }
-            } else if (action == "release") {
+            } else if (action.starts_with("release")) {
                 ROS_INFO("Calling action: RELEASE");
                 if (!release(cost_sample)) {
                     ROS_ASSERT_MSG(false, "Release failed, killing...");
                 }
-            } else if (action == "transit") {
+            } else if (action.starts_with("transit")) {
                 const std::string& ee_loc = dst_state["ee_loc"];
                 ROS_INFO_STREAM("Calling action: TRANSIT (effector destination location: " << ee_loc << ")");
                 if (!transit(cost_sample, ee_loc)) {
                     ROS_ASSERT_MSG(false, "Transit failed, killing...");
                 }
-            } else if (action == "transport") {
+            } else if (action.starts_with("transport")) {
                 // Check if the risky object is being held, and risk needs to be calculated for the action
                 bool isHoldingRiskObject = src_state[m_risk_obj_id] == "ee";
                 if (isHoldingRiskObject)
@@ -91,6 +91,8 @@ class ActionCaller {
                 if (!transport(cost_sample, ee_loc, isHoldingRiskObject)) {
                     ROS_ASSERT_MSG(false, "Transport failed, killing...");
                 }
+            } else {
+                ROS_ASSERT_MSG(false, "Unrecognized action");
             }
             ROS_INFO_STREAM("Action cost 0 (total execution time)    : " << cost_sample[0]);
             ROS_INFO_STREAM("Action cost 1 (total risk)              : " << cost_sample[1]);

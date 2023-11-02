@@ -3,35 +3,32 @@
 show_propositions_only: false
 
 # Save scenario under a given name
-save_scenario_name: big_run
+#save_scenario_name: big_run
 
 # Read a saved scenario. If no TS was found under the name provided, it will be generated from scratch
 open_scenario_name: big_run
 
-save_instances:
-        - 199
+#save_instances:
+#        - 199
         #- 499
 
-#start_instance: 119
+start_instance: 199
 
-# Recurrence LTL formula
-formula: >
-  GF(
+# LTL formulae
+cosafe_formula: >
+  F(
     ((pitcher_dw_r & mug_dw_l) | (pitcher_dw_l & mug_dw_r)) & lid_dw_top
     & (
       F(pitcher_rack_0 | pitcher_rack_1 | (pitcher_dry & F(pitcher_floor_0 | pitcher_floor_1)))
       & F(mug_rack_0 | mug_rack_1 | (mug_dry & F(mug_floor_0 | mug_floor_1)))
       )
     )
-  & G(holding_lid_dw_top | lid_dw_top | holding_lid_lid_loc | lid_lid_loc)
+
+safety_formula: >
+  G(holding_lid_dw_top | lid_dw_top | holding_lid_lid_loc | lid_lid_loc)
+  & G(!(mug_rack_0 | mug_rack_1))
   & G((!lid_lid_loc -> ((pitcher_dw_r & mug_dw_l) | (pitcher_dw_l & mug_dw_r)))
     & !(holding_pitcher_dw_top | holding_mug_dw_top | holding_lid_dw_r | holding_lid_dw_l | holding_lid_floor_0 | holding_lid_floor_1 | holding_lid_dry))
-
-#formula: >
-#  GF(small_cup_dw_c & ((pitcher_dw_r & mug_dw_l) | (pitcher_dw_l & mug_dw_r)) & lid_dw_top 
-#    & F((small_cup_L0 | small_cup_L1 | small_cup_L2) & (pitcher_L0 | pitcher_L1 | pitcher_L2) & (mug_L0 | mug_L1 | mug_L2) & lid_lid_loc)) 
-#  & G((!lid_lid_loc -> (small_cup_dw_c & ((pitcher_dw_r & mug_dw_l) | (pitcher_dw_l & mug_dw_r))))
-#    & !(small_cup_dw_top | pitcher_dw_top | mug_dw_top))
 
 
 # Number of episodes
@@ -44,7 +41,7 @@ confidence: 0.2
 
 # Preference
 pref_mean:
-  - 450.0
+  - 350.0
   - 0.5
 pref_minimal_covariance:
   - 400.0
