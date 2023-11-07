@@ -8,11 +8,11 @@ save_scenario_name: big_run
 # Read a saved scenario. If no TS was found under the name provided, it will be generated from scratch
 open_scenario_name: big_run
 
-save_instances:
-        - 199
-        - 499
+#save_instances:
+#        - 199
+#        - 499
 
-          #start_instance: 199
+start_instance: 499
 
 # LTL formulae
 cosafe_formula: >
@@ -32,7 +32,7 @@ safety_formula: >
 
 
 # Number of episodes
-instances: 501
+instances: 10 #501
 
 # More samples increases accuracy of EFE info gain
 n_efe_samples: 1000
@@ -46,7 +46,7 @@ pref_mean:
 pref_minimal_covariance:
   - 400.0
   - 0.0
-  - 2.0
+  - 2.1
 
 default_mean:
   - 0.01
