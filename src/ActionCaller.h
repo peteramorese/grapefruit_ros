@@ -19,7 +19,7 @@ namespace GFROS {
 
 void waitForManipulatorNodeServices() {
     // Wait until services are active (10s)
-    bool services_active = ros::service::waitForService("/manipulator_node/action_primitive/grasp", 10000);
+    bool services_active = ros::service::waitForService("/manipulator_node/action_primitive/grasp", 30000);
     if (!services_active)
         ROS_ASSERT_MSG(false, "Cannot find manipulator node services");
     ros::WallDuration(1.0).sleep();
@@ -67,18 +67,20 @@ class ActionCaller {
             if (action.starts_with("grasp")) {
                 ROS_INFO("Calling action: GRASP");
                 if (!grasp(cost_sample)) {
-                    ROS_ASSERT_MSG(false, "Grasp failed, killing...");
+                    ROS_WARN("Grasp returned false");
                 }
             } else if (action.starts_with("release")) {
                 ROS_INFO("Calling action: RELEASE");
                 if (!release(cost_sample)) {
-                    ROS_ASSERT_MSG(false, "Release failed, killing...");
+                    ROS_WARN("Release returned false");
+                    //ROS_ASSERT_MSG(false, "Release failed, killing...");
                 }
             } else if (action.starts_with("transit")) {
                 const std::string& ee_loc = dst_state["ee_loc"];
                 ROS_INFO_STREAM("Calling action: TRANSIT (effector destination location: " << ee_loc << ")");
                 if (!transit(cost_sample, ee_loc)) {
-                    ROS_ASSERT_MSG(false, "Transit failed, killing...");
+                    ROS_WARN("Transit returned false");
+                    //ROS_ASSERT_MSG(false, "Transit failed, killing...");
                 }
             } else if (action.starts_with("transport")) {
                 // Check if the risky object is being held, and risk needs to be calculated for the action
@@ -89,6 +91,7 @@ class ActionCaller {
                 const std::string& ee_loc = dst_state["ee_loc"];
                 ROS_INFO_STREAM("Calling action: TRANSPORT (effector destination location: " << ee_loc << ")");
                 if (!transport(cost_sample, ee_loc, isHoldingRiskObject)) {
+                    ROS_WARN("Transport returned false");
                     ROS_ASSERT_MSG(false, "Transport failed, killing...");
                 }
             } else {

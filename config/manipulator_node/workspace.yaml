@@ -27,8 +27,8 @@ dishwasher: {
   dimensions: {
     length: 0.27,
     width: 0.41,
-    height: 0.155,
-    base_thickness: 0.015,
+    height: 0.153,
+    base_thickness: 0.010,
     #base_thickness: 0.005,
     front_wall_thickness: 0.01,
     side_wall_thickness: 0.025,

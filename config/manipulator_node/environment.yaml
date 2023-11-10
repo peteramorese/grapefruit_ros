@@ -14,21 +14,15 @@ dw_l: {
   default: {
     x: 0.4,
     y: 0.12,
-    z: 0.055,
+    z: 0.072,
   },
   object_classes: [
-    pitcher,
-    small_cup
+    pitcher
   ],
   pitcher: {
     x: 0.4,
     y: 0.12,
-    z: 0.0605,
-  },
-  small_cup: {
-    x: 0.4,
-    y: 0.12,
-    z: 0.0275,
+    z: 0.0555,
   },
   detection_radius: 0.10, 
   orientation_type: up_ny
@@ -38,21 +32,15 @@ dw_c: {
   default: {
     x: 0.4,
     y: 0.2,
-    z: 0.055,
+    z: 0.072,
   },
   object_classes: [
-    pitcher,
-    small_cup
+    pitcher
   ],
   pitcher: {
     x: 0.4,
     y: 0.2,
-    z: 0.0605,
-  },
-  small_cup: {
-    x: 0.4,
-    y: 0.2,
-    z: 0.0275,
+    z: 0.0555,
   },
   detection_radius: 0.10, 
   orientation_type: up_y
@@ -62,21 +50,15 @@ dw_r: {
   default: {
     x: 0.4,
     y: 0.28,
-    z: 0.055,
+    z: 0.072,
   },
   object_classes: [
-    pitcher,
-    small_cup
+    pitcher
   ],
   pitcher: {
     x: 0.4,
     y: 0.28,
-    z: 0.0605,
-  },
-  small_cup: {
-    x: 0.4,
-    y: 0.28,
-    z: 0.0275,
+    z: 0.0555,
   },
   detection_radius: 0.10, 
   orientation_type: up_y
@@ -86,7 +68,7 @@ dw_top: {
   default: {
     x: 0.4,
     y: 0.20,
-    z: 0.195,
+    z: 0.192,
   },
   detection_radius: 0.10, 
   orientation_type: up_x
@@ -96,7 +78,7 @@ lid_loc: {
   default: {
     x: -0.40,
     y: -0.40,
-    z: 0.04,
+    z: 0.05,
   },
   detection_radius: 0.10, 
   orientation_type: up_x
@@ -104,21 +86,21 @@ lid_loc: {
 
 dry: { 
   default: {
-    x: 0.10,
+    x: 0.00,
     y: 0.40,
-    z: 0.0425,
+    z: 0.0625,
   },
   object_classes: [
     pitcher,
     small_cup
   ],
   pitcher: {
-    x: 0.10,
+    x: 0.00,
     y: 0.40,
     z: 0.045,
   },
   small_cup: {
-    x: 0.10,
+    x: 0.00,
     y: 0.40,
     z: 0.0125,
   },
@@ -129,21 +111,21 @@ dry: {
 
 floor_0: {
   default: {
-    x: -0.15,
+    x: -0.50,
     y: 0.50,
-    z: 0.0425,
+    z: 0.0625,
   },
   object_classes: [
     pitcher,
     small_cup
   ],
   pitcher: {
-    x: -0.15,
+    x: -0.50,
     y: 0.50,
     z: 0.045,
   },
   small_cup: {
-    x: -0.15,
+    x: -0.50,
     y: 0.50,
     z: 0.0125,
   },
@@ -154,21 +136,21 @@ floor_0: {
 
 floor_1: {
   default: {
-    x: -0.15,
+    x: -0.50,
     y: 0.30,
-    z: 0.0425,
+    z: 0.0625,
   },
   object_classes: [
     pitcher,
     small_cup
   ],
   pitcher: {
-    x: -0.15,
+    x: -0.50,
     y: 0.30,
     z: 0.045,
   },
   small_cup: {
-    x: -0.15,
+    x: -0.50,
     y: 0.30,
     z: 0.0125,
   },
@@ -181,7 +163,7 @@ rack_0: {
   default: {
     x: 0.4,
     y: -0.27,
-    z: 0.5475,
+    z: 0.5675,
   },
   object_classes: [
     pitcher,
@@ -206,7 +188,7 @@ rack_1: {
   default: {
     x: 0.2,
     y: -0.47,
-    z: 0.5475,
+    z: 0.5675,
   },
   object_classes: [
     pitcher,
